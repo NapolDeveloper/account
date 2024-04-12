@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@emotion/react", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:11.11.4"],\
           ["@emotion/styled", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:11.11.5"],\
+          ["@tanstack/react-query", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:5.29.2"],\
           ["@types/node", "npm:20.12.7"],\
           ["@types/react", "npm:18.2.77"],\
           ["@types/react-dom", "npm:18.2.25"],\
@@ -40,6 +41,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:18.2.0"],\
+          ["swiper", "npm:11.1.1"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
@@ -1758,6 +1760,38 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@tanstack/query-core", [\
+      ["npm:5.29.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@tanstack-query-core-npm-5.29.0-908241c55d-10c0.zip/node_modules/@tanstack/query-core/",\
+        "packageDependencies": [\
+          ["@tanstack/query-core", "npm:5.29.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/react-query", [\
+      ["npm:5.29.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@tanstack-react-query-npm-5.29.2-0e7760f3f4-10c0.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "npm:5.29.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:5.29.2", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-react-query-virtual-2c116e9cd6/4/.yarn/berry/cache/@tanstack-react-query-npm-5.29.2-0e7760f3f4-10c0.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:5.29.2"],\
+          ["@tanstack/query-core", "npm:5.29.0"],\
+          ["@types/react", "npm:18.2.77"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/json5", [\
       ["npm:0.0.29", {\
         "packageLocation": "../../../.yarn/berry/cache/@types-json5-npm-0.0.29-f63a7916bd-10c0.zip/node_modules/@types/json5/",\
@@ -1924,6 +1958,7 @@ const RAW_RUNTIME_STATE =
           ["account", "workspace:."],\
           ["@emotion/react", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:11.11.4"],\
           ["@emotion/styled", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:11.11.5"],\
+          ["@tanstack/react-query", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:5.29.2"],\
           ["@types/node", "npm:20.12.7"],\
           ["@types/react", "npm:18.2.77"],\
           ["@types/react-dom", "npm:18.2.25"],\
@@ -1936,6 +1971,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:dca38720f89a668eb0b360d0913d1c5581e1b2d39208d51bac8f064258fe47895e04e9de0bd85b5ba87737cbf8ed76a8fdac1429300894d4d88c57a8cf83c0cb#npm:18.2.0"],\
+          ["swiper", "npm:11.1.1"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
@@ -5327,6 +5363,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-10c0.zip/node_modules/supports-preserve-symlinks-flag/",\
         "packageDependencies": [\
           ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["swiper", [\
+      ["npm:11.1.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/swiper-npm-11.1.1-fbb4753780-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
