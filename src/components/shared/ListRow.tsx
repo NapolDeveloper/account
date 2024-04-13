@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from '@emotion/react';
-import Flex from '@shared/Flex';
+import Flex from './Flex';
 import Text from './Text';
 import Skeleton from './Skeleton';
 import Spacing from './Spacing';
