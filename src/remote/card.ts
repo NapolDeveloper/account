@@ -5,6 +5,7 @@ import {
   startAfter,
   limit,
   getDocs,
+  where,
 } from 'firebase/firestore';
 import { store } from './firebase';
 
@@ -29,4 +30,20 @@ export async function getCards(pageParam?: QuerySnapshot<Card>) {
   }));
 
   return { items, lastVisible };
+}
+
+export async function getSearchCards(keyword: string) {
+  const searchQuery = query(
+    collection(store, COLLECTIONS.CARD),
+    // 키워드로 시작하는 모든 카드를 검색
+    where('name', '>=', keyword),
+    where('name', '<=', keyword + '\uf8ff'),
+  );
+
+  const cardSnapshot = await getDocs(searchQuery);
+
+  return cardSnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...(doc.data() as Card),
+  }));
 }

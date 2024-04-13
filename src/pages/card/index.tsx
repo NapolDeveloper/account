@@ -11,6 +11,8 @@ import { getCards } from '@/remote/card';
 
 import Badge from '@/components/shared/Badge';
 import ListRow from '@/components/shared/ListRow';
+import Input from '@/components/shared/Input';
+import Top from '@/components/shared/Top';
 
 function CardListPage() {
   const navigate = useRouter();
@@ -30,6 +32,8 @@ function CardListPage() {
     },
   });
 
+  console.log(data);
+
   const loadMore = useCallback(() => {
     if (hasNextPage === false || isFetching) {
       return;
@@ -46,6 +50,14 @@ function CardListPage() {
 
   return (
     <div>
+      <Top title="추천카드" subTitle="회원님을 위해 준비했어요" />
+      <div style={{ padding: '0 24px 12px 24px' }}>
+        <Input
+          onFocus={() => {
+            navigate.push('/card/search');
+          }}
+        />
+      </div>
       <InfiniteScroll
         dataLength={cards?.length}
         hasMore={hasNextPage}
