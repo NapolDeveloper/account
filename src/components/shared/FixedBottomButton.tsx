@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { css, keyframes } from '@emotion/react';
 import { createPortal } from 'react-dom';
 
-import Button from '@shared/Button';
+import Button from '@components/shared/Button';
 import { colors } from '@/styles/colorPalette';
 
 interface FixedBottomButtonProps {
