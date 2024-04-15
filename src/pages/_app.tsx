@@ -5,6 +5,7 @@ import {
   QueryClient,
   HydrationBoundary,
 } from '@tanstack/react-query';
+import { SessionProvider } from 'next-auth/react';
 
 import globalStyles from '@/styles/globalStyles';
 
@@ -14,16 +15,18 @@ const client = new QueryClient();
 
 export default function App({
   Component,
-  pageProps: { dehydrateState, ...pageProps },
+  pageProps: { dehydrateState, session, ...pageProps },
 }: AppProps) {
   return (
     <Layout>
       <Global styles={globalStyles} />
-      <QueryClientProvider client={client}>
-        <HydrationBoundary state={dehydrateState}>
-          <Component {...pageProps} />
-        </HydrationBoundary>
-      </QueryClientProvider>
+      <SessionProvider session={session}>
+        <QueryClientProvider client={client}>
+          <HydrationBoundary state={dehydrateState}>
+            <Component {...pageProps} />
+          </HydrationBoundary>
+        </QueryClientProvider>
+      </SessionProvider>
     </Layout>
   );
 }
